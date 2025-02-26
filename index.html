@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar{
+           background-color: gray;
+           color: white;
+           padding: 10px;
+           text-align: center;
+           position: sticky;
+           top: 0px;
+           width: 100%;
+           z-index: 100;
+           display: flex;
+           align-items: center;
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .brand{
+            display: flex;
+            align-items: centerq;
+
+
+        }
+        .menu{
+            margin-left: 450px ;
+
+        }
+        .search{
+            margin-left: 140px;
+
+        }
+        .brand-logo{
+            height: 50px;
+
+        }
+        .menu-items{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 5px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .menu-items:hover{
+            text-decoration: underline;
+        }
+        .search-box{
+            padding: 5px 20px ;
+            border-radius: 30px;
+            border: none;
+        }
+        .menu-icon{
+            height: 50px;
+            display: none;
+        }
+
+        @media (max-width:600px) {
+            .search-box{
+                display: none;
+            }
+            .menu{
+            display: none;
+            }
+            .menu-icon{
+            display: block;
+            margin-left: auto;
+            margin-right: 50px;
+        }
+        }
+        @media (min-width:601px) and (max-width:800px) {
+            .search-box{
+                display: none;
+            }
+            .menu{
+            margin-left: 140px ;
+            }
+        }
+
+        @media (min-width:801px) and (max-width:1100px) {
+            .search-box{
+                display: none;
+            }
+            .menu{
+            margin-left: 310px ;
+            }
+            
+        }        
+    </style>
+
+    
+</head>
+<body>
+    <div class="navbar">
+         <div class="brand">
+            <img src="./cat.png" alt="cat" class="brand-logo"/>
+            <h2>Cats</h2>
+         </div>
+         <div class="menu">
+            <a href="#" class="menu-items">Home
+                <img src="./animal-shelter.png" alt="Home" height="25px">
+            </a>
+            <a href="#" class="menu-items">About
+                <img src="./about.png" alt="about" height="25px">
+            </a>
+            <a href="#" class="menu-items">Contact
+                <img src="./call.png" alt="call" height="25px">
+            </a>
+         </div>
+         <div class="search">
+            <input type="text" placeholder="Search" class="search-box">
+         </div>
+         <img src="./menus (1).png" alt="menu" class="menu-icon">
+    </div>
+</body>
+</html>
